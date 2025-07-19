@@ -1,0 +1,26 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+incarra_agent_project = "9cPZ5PjWUmL9g3os5d7xqsy9XSSKP2ekMNiYRNRYyV1"
+
+[programs.devnet]
+incarra_agent_project = "9cPZ5PjWUmL9g3os5d7xqsy9XSSKP2ekMNiYRNRYyV1"
+
+[programs.mainnet]
+incarra_agent_project = "9cPZ5PjWUmL9g3os5d7xqsy9XSSKP2ekMNiYRNRYyV1"
+
+# CARV SVM Testnet configuration
+[programs.testnet]
+incarra_agent_project = "9cPZ5PjWUmL9g3os5d7xqsy9XSSKP2ekMNiYRNRYyV1"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "https://rpc.testnet.carv.io/rpc"  # CARV SVM Testnet
+wallet = "./backpack-keypair.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
